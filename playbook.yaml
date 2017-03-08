@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Ensure NTP installed
+    apt: name=ntp state=present
